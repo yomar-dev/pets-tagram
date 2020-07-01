@@ -1,5 +1,55 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Folder Structure
+
+```
+> src
+    > assets
+        > styles
+            [styles].css
+        > img
+            logo.png
+    > app
+        > styles
+            global.scss
+        > store
+            > entityName
+                reducers.ts
+                actions.ts
+                store.ts
+            store.ts
+        > shared
+            > constants
+            > dataStructures
+            > components
+                > button
+                    button.scss
+                    Button.test.tsx
+                    Button.tsx
+                    index.ts
+                index.ts
+            > services
+            > [other-utilities]
+              index.ts
+        > moduleName
+            > constants
+            > dataStructures
+            > components
+                > componentName
+                    componentName.scss
+                    ComponentName.test.tsx
+                    ComponentName.tsx
+                    index.ts
+            > pages  
+                > pageName
+                    pageName.scss
+                    PageName.test.tsx
+                    PageName.tsx
+                    index.ts  
+            > services
+              index.ts
+            
+```
 ## Available Scripts
 
 In the project directory, you can run:
