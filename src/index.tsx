@@ -1,13 +1,13 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import App from 'App';
 import * as serviceWorker from 'serviceWorker';
 
 import 'styles/styles.scss';
+import { AppRouter } from 'routes/AppRouter';
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <AppRouter />
   </StrictMode>,
   document.getElementById('root'),
 );
