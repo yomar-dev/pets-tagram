@@ -3,9 +3,7 @@ import './input.scss';
 
 class Input extends Component {
   render() {
-    return(
-      <p className="input">Input</p>
-    )
+    return <p className="input">Input</p>;
   }
 }
 

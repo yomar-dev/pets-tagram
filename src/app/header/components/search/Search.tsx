@@ -3,9 +3,7 @@ import './search.scss';
 
 class Search extends Component {
   render() {
-    return (
-      <p className="search">Search</p>
-    )
+    return <p className="search">Search</p>;
   }
 }
 

@@ -40,16 +40,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
                     ComponentName.test.tsx
                     ComponentName.tsx
                     index.ts
-            > pages  
+            > pages
                 > pageName
                     pageName.scss
                     PageName.test.tsx
                     PageName.tsx
-                    index.ts  
+                    index.ts
             > services
               index.ts
-            
+
 ```
+
 ## Available Scripts
 
 In the project directory, you can run:

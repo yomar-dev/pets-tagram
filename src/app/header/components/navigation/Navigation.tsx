@@ -3,9 +3,7 @@ import './navigation.scss';
 
 class Navigation extends Component {
   render() {
-    return(
-      <p className="navigation">Navigation</p>
-    )
+    return <p className="navigation">Navigation</p>;
   }
 }
 
