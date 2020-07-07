@@ -19,7 +19,7 @@ const Registration = () => {
         </div>
         <div className="form-control">
           <label className="form__label">Crea una contraseña</label>
-          <Input placeholder={'********'} />
+          <Input type="password" placeholder="⦁⦁⦁⦁⦁⦁⦁⦁" />
         </div>
 
         <div className="form-control">
