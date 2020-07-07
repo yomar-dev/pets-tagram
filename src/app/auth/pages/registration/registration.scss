@@ -1,16 +1,14 @@
 @import 'src/styles/base/variables';
 
 .registration {
-  padding: 30px;
+  padding: 3rem;
 
   &__title {
     color: $primary-color;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.1;
+    font-size: 2.4rem;
     text-align: center;
-    letter-spacing: -0.03em;
-    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
   }
 }
 
@@ -18,14 +16,11 @@
   &-control {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   &__label {
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
     color: $text-color;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 }
