@@ -1,6 +1,7 @@
 import React from 'react';
 import './registration.scss';
 import Input from 'app/shared/components/input';
+import Button from 'app/shared/components/button';
 
 const Registration = () => {
   return (
@@ -22,7 +23,7 @@ const Registration = () => {
         </div>
 
         <div className="form-control">
-          <button>Crear cuenta</button>
+          <Button>Crear cuenta</Button>
         </div>
       </form>
     </div>

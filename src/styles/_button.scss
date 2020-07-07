@@ -1,0 +1,12 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+%button {
+  @include font-base;
+  padding: $padding-unit 3.4rem;
+  border-radius: $radius;
+  color: $text-color-white;
+  background-color: $primary-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
