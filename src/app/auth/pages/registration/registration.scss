@@ -1,2 +1,31 @@
+@import 'src/styles/base/variables';
+
 .registration {
+  padding: 30px;
+
+  &__title {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+  }
+}
+
+.form {
+  &-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: $text-color;
+    margin-bottom: 10px;
+  }
 }

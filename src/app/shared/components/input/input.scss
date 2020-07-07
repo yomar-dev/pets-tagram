@@ -1,2 +1,9 @@
-.input {
+@import 'src/styles/base/variables';
+
+.pets-input {
+  background: $secondary-color;
+  border-radius: 14px;
+  border: 1px solid #f5b86b;
+  height: 45px;
+  padding: 14px;
 }
