@@ -4,6 +4,7 @@
 %button {
   @include font-base;
   padding: $padding-unit 3.4rem;
+  border: none;
   border-radius: $radius;
   color: $text-color-white;
   background-color: $primary-color;
