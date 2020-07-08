@@ -1,34 +1,19 @@
 import React from 'react';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
+
 import './registration.scss';
-import Input from 'app/shared/components/input';
-import Button from 'app/shared/components/button';
-import RegistrationNav from 'app/auth/components/registrationNav';
+import CreateAccount from 'app/auth/components/createAccount';
 
 const Registration = () => {
+  let { path } = useRouteMatch();
+
   return (
     <div className="registration">
-      <RegistrationNav />
-
-      <h1 className="registration__title">Crea la cuenta de tu mascota.</h1>
-
-      <form>
-        <div className="form-control">
-          <label className="form__label">Nombre de tu mascota</label>
-          <Input placeholder={'ej. Tommy'} />
-        </div>
-        <div className="form-control">
-          <label className="form__label">Tu correo electrónico</label>
-          <Input placeholder={'ej. nombre@correo.com'} />
-        </div>
-        <div className="form-control">
-          <label className="form__label">Crea una contraseña</label>
-          <Input type="password" placeholder="⦁⦁⦁⦁⦁⦁⦁⦁" />
-        </div>
-
-        <div className="form-control">
-          <Button>Crear cuenta</Button>
-        </div>
-      </form>
+      <Switch>
+        <Route exact path={path}>
+          <CreateAccount />
+        </Route>
+      </Switch>
     </div>
   );
 };

@@ -2,26 +2,4 @@
 
 .registration {
   padding: 3rem;
-
-  &__title {
-    color: $primary-color;
-    font-weight: 600;
-    font-size: 2.4rem;
-    text-align: center;
-    margin-bottom: 2.2rem;
-    margin-top: 2.7rem;
-  }
-}
-
-.form {
-  &-control {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-  }
-
-  &__label {
-    color: $text-color;
-    margin-bottom: 1rem;
-  }
 }
