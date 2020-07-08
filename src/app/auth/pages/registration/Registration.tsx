@@ -2,10 +2,13 @@ import React from 'react';
 import './registration.scss';
 import Input from 'app/shared/components/input';
 import Button from 'app/shared/components/button';
+import RegistrationNav from 'app/auth/components/registrationNav';
 
 const Registration = () => {
   return (
     <div className="registration">
+      <RegistrationNav />
+
       <h1 className="registration__title">Crea la cuenta de tu mascota.</h1>
 
       <form>
