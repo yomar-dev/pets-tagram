@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import './registrationNav.scss';
 
 const RegistrationNav = ({ title = '' }) => {
@@ -8,11 +10,32 @@ const RegistrationNav = ({ title = '' }) => {
         <span className="registration-header__left-arrow">&larr;</span>
         <nav className="registration-nav">
           <ul className="registration-nav__menu">
-            <li className="registration-nav__item"></li>
-            <li className="registration-nav__item"></li>
-            <li className="registration-nav__item"></li>
-            <li className="registration-nav__item"></li>
-            <li className="registration-nav__item"></li>
+            <NavLink
+              exact
+              to="/registration"
+              className="registration-nav__item"
+              activeClassName="registration-nav__item--active"
+            ></NavLink>
+            <NavLink
+              to="upload-image"
+              className="registration-nav__item"
+              activeClassName="registration-nav__item--active"
+            ></NavLink>
+            <NavLink
+              to="nickname"
+              className="registration-nav__item"
+              activeClassName="registration-nav__item--active"
+            ></NavLink>
+            <NavLink
+              to="pet-type"
+              className="registration-nav__item"
+              activeClassName="registration-nav__item--active"
+            ></NavLink>
+            <NavLink
+              to="pet-birthdate"
+              className="registration-nav__item"
+              activeClassName="registration-nav__item--active"
+            ></NavLink>
           </ul>
         </nav>
         <span className="registration-header__right-arrow">&rarr;</span>
