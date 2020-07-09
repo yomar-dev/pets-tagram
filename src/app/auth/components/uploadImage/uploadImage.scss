@@ -1,0 +1,61 @@
+@import 'src/styles/base/variables';
+
+.upload-image {
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__preview {
+      width: 196px;
+      height: 196px;
+
+      &-img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+  box-sizing: border-box;
+  border-radius: $radius;
+  color: white;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin: 2.8rem 0;
+  padding: 1.2rem 3rem;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  box-sizing: border-box;
+  border-radius: $radius;
+  color: $primary-color;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin: 2.8rem 0;
+  padding: 1.2rem 3rem;
+  text-transform: uppercase;
+}
+
+.btn-link {
+  background-color: transparent;
+  border: none;
+  color: $orange-color;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
