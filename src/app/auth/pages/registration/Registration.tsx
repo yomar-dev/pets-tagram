@@ -6,6 +6,7 @@ import CreateAccount from 'app/auth/components/createAccount';
 import UploadImage from 'app/auth/components/uploadImage';
 import Nickname from 'app/auth/components/nickname';
 import PetType from 'app/auth/components/petType';
+import PetBirthdate from 'app/auth/components/petBirthtdate';
 
 const Registration = () => {
   let { path } = useRouteMatch();
@@ -21,6 +22,9 @@ const Registration = () => {
         </Route>
         <Route exact path={`${path}/pet-type`}>
           <PetType />
+        </Route>
+        <Route exact path={`${path}/pet-birthdate`}>
+          <PetBirthdate />
         </Route>
         <Route path={path}>
           <CreateAccount />

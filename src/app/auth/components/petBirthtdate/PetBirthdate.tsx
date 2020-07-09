@@ -1,11 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import './petType.scss';
+import './petBirthdate.scss';
 import RegistrationNav from '../registrationNav';
 import Input from 'app/shared/components/input';
 
-const PetType = () => {
+const PetBirthdate = () => {
   let history = useHistory();
 
   const handleNextStep = () => {
@@ -14,20 +14,16 @@ const PetType = () => {
 
   return (
     <section className="pet-type">
-      <RegistrationNav title="Qué tipo de mascota es Bruno?" />
+      <RegistrationNav title="Cuando cumple Bruno?" />
 
       <form>
         <div className="form-control">
-          <label className="form__label">Tipo de mascota</label>
-          <Input placeholder="ej. Perro, Gato, Loro" />
+          <label className="form__label">Fecha de cumpleaños</label>
+          <Input placeholder="ej. Marzo 4" />
         </div>
         <div className="form-control">
-          <label className="form__label">Raza</label>
-          <Input placeholder="ej. Labrador, Angora" />
-        </div>
-        <div className="form-control">
-          <label className="form__label">Color</label>
-          <Input placeholder="ej. Verde con punticos" />
+          <label className="form__label">Años</label>
+          <Input placeholder="ej. 4" />
         </div>
 
         <div className="form-control" onClick={handleNextStep}>
@@ -41,4 +37,4 @@ const PetType = () => {
   );
 };
 
-export default PetType;
+export default PetBirthdate;
