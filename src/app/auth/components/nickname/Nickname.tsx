@@ -9,7 +9,7 @@ const Nickname = () => {
   let history = useHistory();
 
   const handleNextStep = () => {
-    history.push('/registration/nickname');
+    history.push('/registration/pet-type');
   };
 
   return (
