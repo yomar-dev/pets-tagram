@@ -2,8 +2,15 @@ import React from 'react';
 
 import './uploadImage.scss';
 import RegistrationNav from '../registrationNav';
+import { useHistory } from 'react-router-dom';
 
 const UploadImage = () => {
+  let history = useHistory();
+
+  const handleNextStep = () => {
+    history.push('/registration/nickname');
+  };
+
   return (
     <div className="upload-image">
       <RegistrationNav title="Agrega una imagen de tu mascota." />
@@ -18,11 +25,15 @@ const UploadImage = () => {
         </figure>
 
         <button className="btn-outline">Examinar fotos</button>
-        <button className="btn-link">Saltar este paso</button>
+        <button className="btn-link" onClick={handleNextStep}>
+          Saltar este paso
+        </button>
       </form>
 
       <footer className="upload-image-footer">
-        <button className="btn-primary">Continuar</button>
+        <button className="btn-primary" onClick={handleNextStep}>
+          Continuar
+        </button>
       </footer>
     </div>
   );

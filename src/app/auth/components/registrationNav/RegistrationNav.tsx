@@ -3,7 +3,7 @@ import './registrationNav.scss';
 
 const RegistrationNav = ({ title = '' }) => {
   return (
-    <div className="registration">
+    <div>
       <header className="registration-header">
         <span className="registration-header__left-arrow">&larr;</span>
         <nav className="registration-nav">
