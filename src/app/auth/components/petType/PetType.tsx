@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 
 import './petType.scss';
 import RegistrationNav from '../registrationNav';
-import Input from 'app/shared/components/input';
 
 const PetType = () => {
   let history = useHistory();
@@ -19,15 +18,15 @@ const PetType = () => {
       <form>
         <div className="form-control">
           <label className="form__label">Tipo de mascota</label>
-          <Input placeholder="ej. Perro, Gato, Loro" />
+          <input placeholder="ej. Perro, Gato, Loro" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Raza</label>
-          <Input placeholder="ej. Labrador, Angora" />
+          <input placeholder="ej. Labrador, Angora" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Color</label>
-          <Input placeholder="ej. Verde con punticos" />
+          <input placeholder="ej. Verde con punticos" className="pets-input" />
         </div>
 
         <div className="form-control" onClick={handleNextStep}>

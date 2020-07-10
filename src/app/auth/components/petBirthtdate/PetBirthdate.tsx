@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 
 import './petBirthdate.scss';
 import RegistrationNav from '../registrationNav';
-import Input from 'app/shared/components/input';
 
 const PetBirthdate = () => {
   let history = useHistory();
@@ -19,11 +18,11 @@ const PetBirthdate = () => {
       <form>
         <div className="form-control">
           <label className="form__label">Fecha de cumpleaños</label>
-          <Input placeholder="ej. Marzo 4" />
+          <input placeholder="ej. Marzo 4" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Años</label>
-          <Input placeholder="ej. 4" />
+          <input placeholder="ej. 4" className="pets-input" />
         </div>
 
         <div className="form-control" onClick={handleNextStep}>

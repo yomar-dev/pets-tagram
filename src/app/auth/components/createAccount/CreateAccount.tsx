@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './createAccount.scss';
-import Input from 'app/shared/components/input';
 import { useHistory } from 'react-router-dom';
 
 import RegistrationNav from '../registrationNav';
@@ -20,15 +19,15 @@ const CreateAccount = () => {
       <form>
         <div className="form-control">
           <label className="form__label">Nombre de tu mascota</label>
-          <Input placeholder={'ej. Tommy'} />
+          <input placeholder="ej. Tommy" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Tu correo electrónico</label>
-          <Input placeholder={'ej. nombre@correo.com'} />
+          <input placeholder="ej. nombre@correo.com" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Crea una contraseña</label>
-          <Input type="password" placeholder="⦁⦁⦁⦁⦁⦁⦁⦁" />
+          <input type="password" placeholder="⦁⦁⦁⦁⦁⦁⦁⦁" className="pets-input" />
         </div>
 
         <div className="form-control" onClick={handleNextStep}>

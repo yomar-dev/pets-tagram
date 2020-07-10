@@ -2,8 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import RegistrationNav from '../registrationNav';
-import Input from 'app/shared/components/input';
-import Button from 'app/shared/components/button';
 
 const Nickname = () => {
   let history = useHistory();
@@ -19,16 +17,16 @@ const Nickname = () => {
       <form>
         <div className="form-control">
           <label className="form__label">Nombre de usuario</label>
-          <Input placeholder="ej. Apodo" />
+          <input placeholder="ej. Apodo" className="pets-input" />
         </div>
         <div className="form-control">
           <label className="form__label">Sugerencias</label>
-          <Input value="Brunoelbonito" />
+          <input placeholder="Brunoelbonito" className="pets-input" />
           <br />
-          <Input value="Bruno1234" />
+          <input placeholder="Bruno1234" className="pets-input" />
         </div>
         <div className="form-control" onClick={handleNextStep}>
-          <Button>Continuar</Button>
+          <button className="pets-btn">Continuar</button>
         </div>
       </form>
     </section>
