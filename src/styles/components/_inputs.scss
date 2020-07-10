@@ -1,0 +1,20 @@
+.pets-input {
+  background: $secondary-color;
+  border: 1px solid transparent;
+  border-radius: $radius;
+  color: $input-text-color;
+  font-size: 1.4rem;
+  height: 45px;
+  line-height: 111.9%;
+  letter-spacing: -0.03em;
+  outline: none;
+  padding: 1.4rem;
+
+  &:focus {
+    border: 1px solid $input-border-color;
+  }
+
+  &--has-error {
+    border: 1px solid $error-color;
+  }
+}
