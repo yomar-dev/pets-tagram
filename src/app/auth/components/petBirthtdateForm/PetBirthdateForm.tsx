@@ -25,8 +25,8 @@ const PetBirthdateForm = () => {
         </div>
 
         <div className="form-control" onClick={handleNextStep}>
-          <button className="btn-primary">Continuar</button>
-          <button className="btn-link" onClick={handleNextStep}>
+          <button className="pets-btn">Continuar</button>
+          <button className="pets-btn pets-btn--link" onClick={handleNextStep}>
             Saltar este paso
           </button>
         </div>

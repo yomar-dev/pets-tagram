@@ -24,14 +24,14 @@ const UploadImageForm = () => {
           />
         </figure>
 
-        <button className="btn-outline">Examinar fotos</button>
-        <button className="btn-link" onClick={handleNextStep}>
+        <button className="pets-btn pets-btn--secondary">Examinar fotos</button>
+        <button className="pets-btn pets-btn--link" onClick={handleNextStep}>
           Saltar este paso
         </button>
       </form>
 
       <footer className="upload-image-footer">
-        <button className="btn-primary" onClick={handleNextStep}>
+        <button className="pets-btn" onClick={handleNextStep}>
           Continuar
         </button>
       </footer>

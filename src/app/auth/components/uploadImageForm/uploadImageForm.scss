@@ -1,12 +1,17 @@
 @import 'src/styles/base/variables';
 
 .upload-image {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+
   &-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &__preview {
+      margin-bottom: 30px;
       width: 196px;
       height: 196px;
 
@@ -19,43 +24,6 @@
   }
 
   &-footer {
-    display: flex;
-    justify-content: center;
+    margin-top: auto;
   }
-}
-
-.btn-primary {
-  background-color: $primary-color;
-  border: none;
-  box-sizing: border-box;
-  border-radius: $radius;
-  color: white;
-  font-weight: bold;
-  letter-spacing: -0.03em;
-  margin: 2.8rem 0;
-  padding: 1.2rem 3rem;
-  text-transform: uppercase;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid $primary-color;
-  box-sizing: border-box;
-  border-radius: $radius;
-  color: $primary-color;
-  font-weight: bold;
-  letter-spacing: -0.03em;
-  margin: 2.8rem 0;
-  padding: 1.2rem 3rem;
-  text-transform: uppercase;
-}
-
-.btn-link {
-  background-color: transparent;
-  border: none;
-  color: $orange-color;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
