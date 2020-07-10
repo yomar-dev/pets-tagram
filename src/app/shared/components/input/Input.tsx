@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './input.scss';
 
-class Input extends Component {
-  render() {
-    return <p className="input">Input</p>;
-  }
+function Input({ type = 'text', value = '', placeholder = '' }) {
+  return <input type={type} value={value} placeholder={placeholder} className="input" />;
 }
 
 export default Input;

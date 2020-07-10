@@ -1,0 +1,49 @@
+@import 'src/styles/base/variables';
+
+.registration {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left-arrow {
+      color: $primary-color;
+    }
+
+    &__right-arrow {
+      visibility: hidden;
+    }
+  }
+
+  &-nav {
+    &__menu {
+      display: flex;
+      list-style: none;
+    }
+
+    &__item {
+      background-color: rgba(245, 184, 107, 0.3);
+      border-radius: 10px;
+      width: 15px;
+      height: 5px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--active {
+        background-color: $orange-color;
+      }
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    margin-top: 2.7rem;
+  }
+}
