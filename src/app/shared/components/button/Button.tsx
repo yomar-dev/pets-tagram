@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './button.scss';
 
-class Button extends Component {
-  render() {
-    return <button className="button">{this.props.children}</button>;
-  }
+function Button(props) {
+  return <button className="button">{props.children}</button>;
 }
 
 export default Button;
