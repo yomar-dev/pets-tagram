@@ -2,7 +2,6 @@ import React from 'react';
 
 import './createAccount.scss';
 import Input from 'app/shared/components/input';
-import Button from 'app/shared/components/button';
 import { useHistory } from 'react-router-dom';
 
 import RegistrationNav from '../registrationNav';
@@ -33,7 +32,7 @@ const CreateAccount = () => {
         </div>
 
         <div className="form-control" onClick={handleNextStep}>
-          <Button>Crear cuenta</Button>
+          <button className="pets-btn">Crear cuenta</button>
         </div>
       </form>
     </>
