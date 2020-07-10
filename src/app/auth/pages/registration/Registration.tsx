@@ -2,11 +2,11 @@ import React from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 import './registration.scss';
-import CreateAccount from 'app/auth/components/createAccount';
-import UploadImage from 'app/auth/components/uploadImage';
-import Nickname from 'app/auth/components/nickname';
-import PetType from 'app/auth/components/petType';
-import PetBirthdate from 'app/auth/components/petBirthtdate';
+import CreateAccountForm from 'app/auth/components/createAccountForm';
+import UploadImageForm from 'app/auth/components/uploadImageForm';
+import NicknameForm from 'app/auth/components/nicknameForm';
+import PetTypeForm from 'app/auth/components/petTypeForm';
+import PetBirthdateForm from 'app/auth/components/petBirthtdateForm';
 
 const Registration = () => {
   let { path } = useRouteMatch();
@@ -15,19 +15,19 @@ const Registration = () => {
     <div className="registration">
       <Switch>
         <Route exact path={`${path}/upload-image`}>
-          <UploadImage />
+          <UploadImageForm />
         </Route>
         <Route exact path={`${path}/nickname`}>
-          <Nickname />
+          <NicknameForm />
         </Route>
         <Route exact path={`${path}/pet-type`}>
-          <PetType />
+          <PetTypeForm />
         </Route>
         <Route exact path={`${path}/pet-birthdate`}>
-          <PetBirthdate />
+          <PetBirthdateForm />
         </Route>
         <Route path={path}>
-          <CreateAccount />
+          <CreateAccountForm />
         </Route>
       </Switch>
     </div>

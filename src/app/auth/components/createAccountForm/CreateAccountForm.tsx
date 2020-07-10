@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './createAccount.scss';
+import './createAccountForm.scss';
 import { useHistory } from 'react-router-dom';
 
 import RegistrationNav from '../registrationNav';
 
-const CreateAccount = () => {
+const CreateAccountForm = () => {
   let history = useHistory();
 
   const handleNextStep = () => {
@@ -38,4 +38,4 @@ const CreateAccount = () => {
   );
 };
 
-export default CreateAccount;
+export default CreateAccountForm;

@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import RegistrationNav from '../registrationNav';
 
-const Nickname = () => {
+const NicknameForm = () => {
   let history = useHistory();
 
   const handleNextStep = () => {
@@ -33,4 +33,4 @@ const Nickname = () => {
   );
 };
 
-export default Nickname;
+export default NicknameForm;

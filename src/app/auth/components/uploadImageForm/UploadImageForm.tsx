@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './uploadImage.scss';
+import './uploadImageForm.scss';
 import RegistrationNav from '../registrationNav';
 import { useHistory } from 'react-router-dom';
 
-const UploadImage = () => {
+const UploadImageForm = () => {
   let history = useHistory();
 
   const handleNextStep = () => {
@@ -39,4 +39,4 @@ const UploadImage = () => {
   );
 };
 
-export default UploadImage;
+export default UploadImageForm;
