@@ -1,7 +1,7 @@
 import React from 'react';
 import './button.scss';
 
-function Button(props) {
+function Button(props: any) {
   return <button className="button">{props.children}</button>;
 }
 
