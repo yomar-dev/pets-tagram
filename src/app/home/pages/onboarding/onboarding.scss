@@ -1,0 +1,43 @@
+@import 'src/styles/base/variables';
+
+.onboarding {
+  background-color: $secondary-color;
+  padding: 3rem;
+  min-height: 100vh;
+
+  &__figure {
+    width: 300px;
+    height: 380px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 111.9%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    color: rgba(89, 41, 72, 0.56);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 111.9%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+  }
+
+  &-footer .pets-btn {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
