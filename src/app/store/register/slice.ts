@@ -10,10 +10,7 @@ export const registerSlice = createSlice({
   reducers: {},
   extraReducers: {
     [createAccount.fulfilled.type]: (state, action: PayloadAction<Partial<RegisterState>>) => {
-      state.saving = false;
-      state.id = action.payload.id;
-      state.name = action.payload.name;
-      state.email = action.payload.email;
+      return { ...state, ...action.payload, saving: false };
     },
     [savePhoto.fulfilled.type]: (state, action: PayloadAction<string>) => {
       state.saving = false;

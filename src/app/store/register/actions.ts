@@ -12,15 +12,7 @@ export const createAccount = createAsyncThunk(
   async (state: CreateAccountPayload) => {
     // TODO call a real endpoint.
     return await new Promise<Partial<RegisterState>>((resolve) => {
-      setTimeout(
-        () =>
-          resolve({
-            id: 'abc-123',
-            email: 'juan@merlinjobs.com',
-            name: 'Bruno',
-          }),
-        2000,
-      );
+      setTimeout(() => resolve(state), 2000);
     });
   },
 );
