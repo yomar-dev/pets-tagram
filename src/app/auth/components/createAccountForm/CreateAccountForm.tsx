@@ -28,7 +28,7 @@ const CreateAccountForm = () => {
             name="name"
             placeholder="ej. Tommy"
             className="pets-input"
-            ref={register({ required: 'The password is required' })}
+            ref={register({ required: 'The name is required' })}
           />
           {errors.name && <p className="form__error">{errors.name.message}</p>}
         </div>
