@@ -1,60 +1,67 @@
-import React, { FormEvent, useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 import './createAccountForm.scss';
 import RegistrationNav from '../registrationNav';
-import { createAccount } from 'app/store/register';
+import { createAccount, CreateAccountPayload } from 'app/store/register';
 
 const CreateAccountForm = () => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [password, setPassword] = useState('');
+  const { register, handleSubmit, errors } = useForm<CreateAccountPayload>();
   const dispatch = useDispatch();
   let history = useHistory();
 
-  const handleNextStep = (event: FormEvent) => {
-    event.preventDefault();
-    dispatch(createAccount({ email, name, password }));
-    // history.push('/registration/upload-image');
+  const onSubmit = (data: any) => {
+    dispatch(createAccount(data));
+    history.push('/registration/upload-image');
   };
 
   return (
     <>
       <RegistrationNav title="Crea la cuenta de tu mascota." />
 
-      <form onSubmit={handleNextStep}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
           <label className="form__label">Nombre de tu mascota</label>
           <input
+            name="name"
             placeholder="ej. Tommy"
             className="pets-input"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            ref={register({ required: 'The password is required' })}
           />
+          {errors.name && <p className="form__error">{errors.name.message}</p>}
         </div>
         <div className="form-control">
           <label className="form__label">Tu correo electrónico</label>
           <input
+            name="email"
             placeholder="ej. nombre@correo.com"
             className="pets-input"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            ref={register({
+              required: 'The email is required',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Invalid email address',
+              },
+            })}
           />
+          {errors.email && <p className="form__error">{errors.email.message}</p>}
         </div>
         <div className="form-control">
           <label className="form__label">Crea una contraseña</label>
           <input
+            name="password"
             type="password"
             placeholder="⦁⦁⦁⦁⦁⦁⦁⦁"
             className="pets-input"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            ref={register({ required: 'The password is required' })}
           />
+          {errors.password && <p className="form__error">{errors.password.message}</p>}
         </div>
 
         <div className="form-control">
-          <button type="submit" className="pets-btn" disabled={!(name && email && password)}>
+          <button type="submit" className="pets-btn">
             Crear cuenta
           </button>
         </div>
